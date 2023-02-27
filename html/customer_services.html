@@ -73,67 +73,13 @@
           </tr>
         </tbody>
       </table>
-
-      <!-- add service button -->
-      <button class="btn" id="openAddFormButton">ADD SERVICE</button>
-    </div>
-
-    <!-- add service form -->
-    <div id="addFormDiv">
-      <a href="#"
-        ><i id="closeAddFormButton" class="material-icons">close</i></a
-      >
-      <h2>ADD NEW SERVICE:</h2>
-      <form id="addForm" action="#">
-        <div class="error" id="idExists"></div>
-        <!-- remember to change id -->
-        <input
-          required
-          name="Supplier"
-          type="text"
-          id="addName"
-          placeholder="Supplier"
-          value=""
-        />
-        <input
-          required
-          name="Type"
-          type="text"
-          id="addSubject"
-          placeholder="Type"
-          value=""
-        />
-        <input
-          required
-          name="price"
-          type="number"
-          id="addAge"
-          placeholder="price"
-          value=""
-        />
-        <input
-          required
-          name="Detial"
-          type="text"
-          id="addSubject"
-          placeholder="Detial"
-          value=""
-        />
-        <select required name="Status" id="addCountry">
-          <option value="1">avaiable</option>
-          <option value="0">unavaiable</option>
-        </select>
-        <ul class="error" id="addError"></ul>
-        <input required type="button" id="save" value="SAVE" />
-      </form>
-    </div>
     <!--  service detail -->
     <div id="updateFormDiv">
       <a href="#"
         ><i id="closeUpdateFormButton" class="material-icons">close</i></a
       >
-      <h2 style="font-size: 5vh;">SERVICE DETAILS:</h2>
-      <p style="font-size: 4vh;">
+      <h2 style="font-size: 3vh;">SERVICE DETAILS:</h2>
+      <p>
         <strong>Service ID:</strong>S1
         <br /><!--  fix here to get data from db -->
         <strong>Supplier:</strong>Management Board of the Apartment <br />

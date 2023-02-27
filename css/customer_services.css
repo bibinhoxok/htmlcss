@@ -308,6 +308,7 @@ input {
 }
 .detailInfo p {
     font-size: 1.3vw;
+    margin: auto;
 }
 
 /* Media qurey section */
