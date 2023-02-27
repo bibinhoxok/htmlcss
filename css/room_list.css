@@ -289,6 +289,14 @@ input {
     flex-direction: column;
     width: 50%;
 }
+.detailImg {
+    float: left;
+    flex-direction: column;
+    height: 75%;
+    width: 50%;
+    background-color: #ddd;
+    background-image: url(/img/ban-công-căn-hộ-Vinhomes-Grand-Park.jpg);
+}
 .detailInfo p {
     font-size: 1.3vw;
 }
