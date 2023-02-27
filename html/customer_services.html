@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/customer_services.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -20,10 +20,10 @@
         <div id="mainListDiv" class="main_list">
           <ul class="navlinks">
             <li><a href="#">Profile</a></li>
-            <li><a href="#">Room</a></li>
+            <li><a href="room_list.html">Room</a></li>
             <li><a href="#">Forum</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="customer_bills.html">Bill</a></li>
+            <li><a href="#">Bill</a></li>
           </ul>
         </div>
       </div>
@@ -132,19 +132,16 @@
       <a href="#"
         ><i id="closeUpdateFormButton" class="material-icons">close</i></a
       >
-      <h2>SERVICE DETAILS:</h2>
-      <div class="detailImg"><p>IMG here!</p></div>
-      <div class="detailInfo">
-        <p>
-          <strong>Service ID:</strong>S1
-          <br /><!--  fix here to get data from db -->
-          <strong>Supplier:</strong>Management Board of the Apartment <br />
-          <strong>Type:</strong>management fee of apartment <br />
-          <strong>Price:</strong>300000 <br />
-          <strong>Detail:</strong>fire alarm, repair, etc. <br />
-          <strong>Status:</strong>avaiable <br />
-        </p>
-      </div>
+      <h2 style="font-size: 5vh;">SERVICE DETAILS:</h2>
+      <p style="font-size: 4vh;">
+        <strong>Service ID:</strong>S1
+        <br /><!--  fix here to get data from db -->
+        <strong>Supplier:</strong>Management Board of the Apartment <br />
+        <strong>Type:</strong>management fee of apartment <br />
+        <strong>Price:</strong>300000 <br />
+        <strong>Detail:</strong>fire alarm, repair, etc. <br />
+        <strong>Status:</strong>avaiable <br />
+      </p>
     </div>
     <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -155,7 +152,7 @@
     ></script>
 
     <!-- Function used to shrink nav bar removing paddings and adding black background -->
-    <script src="/js/scipt.js"></script>
+    <script src="/js/customer_services.js"></script>
     <script>
       $(window).scroll(function () {
         if ($(document).scrollTop() > 50) {
