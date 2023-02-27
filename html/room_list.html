@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/room_list.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Room list</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <section class="home"></section>
+    <nav class="nav">
+      <div class="container">
+        <div class="logo">
+          <a href="#">Your Logo</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a href="#">Profile</a></li>
+            <li><a href="room_list.html">Room</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="customer_bills.html">Bill</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section style="height: 6vh"></section>
+
+    <!-- table element -->
+    <div class="table_container">
+      <h1>Room list</h1>
+      <div class="n1">
+        <div class="search">
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Room ID</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Status </th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- data examle, remember to delete -->
+          <div id="container"></div>
+          <tr onclick="$('#updateFormDiv').slideDown();" id="">
+            <!-- fix id to create data -->
+            <td>R1</td>
+            <td>1LDK</td>
+            <td>300000</td>
+            <td class="actives-n"><p>paid</p></td>
+          </tr>
+          <tr onclick="$('#updateFormDiv').slideDown();" id="">
+            <td>R2</td>
+            <td>1LDK</td>
+            <td>300000</td>
+            <td class="actives"><p>unpaid</p></td>
+          </tr>
+          <tr onclick="$('#updateFormDiv').slideDown();" id="">
+            <!-- fix id to create data -->
+            <td>R3</td>
+            <td>1LDK</td>
+            <td>300000</td>
+            <td class="actives-n"><p>paid</p></td>
+          </tr>
+          <tr onclick="$('#updateFormDiv').slideDown();" id="">
+            <td>R4</td>
+            <td>1LDK</td>
+            <td>300000</td>
+            <td class="actives"><p>unpaid</p></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>*click a row to see detail</p>
+
+     
+    <!--  service detail -->
+    <div id="updateFormDiv">
+      <a href="#"
+        ><i id="closeUpdateFormButton" class="material-icons">close</i></a
+      >
+      <h2>ROOM DETAILS:</h2>
+      <div class="detailImg"></div>
+      <div class="detailInfo">
+        <p>
+          <strong>Room ID:</strong>S1
+          <br /><!--  fix here to get data from db -->
+          <strong>Type:</strong>1LDK <br />
+          <strong>price:</strong>300000 <br />
+          <strong>Status:</strong>avaiable <br />
+          <strong>Furniture:</strong>
+          <table>
+            <thead>
+              <tr>
+                <th>Furniture</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- data examle, remember to delete -->
+              <tr>
+                <!-- fix id to create data -->
+                <td>curtain</td>
+                <td>3pcs, good</td>
+              </tr>
+              <tr>
+                <!-- fix id to create data -->
+                <td>air-conditioner</td>
+                <td>3pcs, good</td>
+              </tr>
+              <tr>
+                <!-- fix id to create data -->
+                <td>electric stove</td>
+                <td>1pcs, good</td>
+              </tr>
+            </tbody>
+          </table>
+        </p>
+      </div>
+    </div>
+      
+      </div>
+    </div>
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script src="/js/room_list.js"></script>
+    <script>
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 50) {
+          $(".nav").addClass("affix");
+          console.log("OK");
+        } else {
+          $(".nav").removeClass("affix");
+        }
+      });
+    </script>
+  </body>
+</html>
