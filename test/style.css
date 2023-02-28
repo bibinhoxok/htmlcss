@@ -1,6 +1,6 @@
 @import url('https://i.pximg.net/img-original/img/2022/10/24/11/13/03/102192308_p0.png');
 :root {
-    --primary: rgba(195, 207, 244, 1);
+    --primary: #009688;
     --secondary: #607D8B;
     --black: #424242;
 }
@@ -104,89 +104,6 @@ body {
 
 
 /* Home section */
-.table_container {
-    width: 80%;
-    height: auto;
-    min-height: 80vh;
-    overflow-y: auto;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    padding: 15px;
-    border-radius: 2px;
-    margin: auto;
-    margin-top: 50px;
-    background-color: white;
-    font-size: 20px;
-}
-h1 {
-    text-align: center;
-    font-size: 2vw;
-    margin: auto;
-}
-
-table{
-    border-collapse: collapse;
-    margin-top: 5px;
-    width: 100%;
-}
-.n1 {
-    line-height: 30px;
-    margin: 0;
-    padding: 0;
-}
- .search{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0px 10px;
-    border: 1px solid #d7dbe6;
-    border-radius: 4px;
-    margin-left: 82%;
-}
-
-.search i{
-    margin-right: 14px;
-}
-
-.search input{
-    border: none;
-    outline: none;
-    font-size: 14px;
-}
-
-tr{
-    border-bottom: 1px solid#eef0f3;
-    text-align: center;
-}
-
-th{
-    background-color: var(--primary);
-    color: white;
-    text-align: center;
-}
-
-tr:nth-child(2n){background-color: #fff;}
-
-tr:hover {background-color: #ccc;}
-
-tbody tr td{
-    padding: 10px 15px;
-}
-
-.actives p{
-    background: #fc4949;
-    padding: 2px 10px;
-    display: inline-block;
-    color: #2b2b2b;
-    border-radius: 40px;
-}
-
-.actives-n p{
-    background: #a1f29a;
-    padding: 2px 10px;
-    display: inline-block;
-    color: #2b2b2b;
-    border-radius: 40px;
-}
 
 /* nav animation */
 
@@ -284,18 +201,17 @@ input {
     padding-bottom: 20vh;
     width: 100%;
 }
-.detailInfo {
-    float: left;
-    flex-direction: column;
-    width: 50%;
-}
 .detailImg {
     float: left;
     flex-direction: column;
     height: 75%;
     width: 50%;
     background-color: #ddd;
-    background-image: url(/img/ban-công-căn-hộ-Vinhomes-Grand-Park.jpg);
+}
+.detailInfo {
+    float: left;
+    flex-direction: column;
+    width: 50%;
 }
 .detailInfo p {
     font-size: 1.3vw;
