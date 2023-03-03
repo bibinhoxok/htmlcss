@@ -17,10 +17,10 @@ $(".navTrigger").click(function () {
   $("#save").click(function () {
       $("#addFormDiv").slideUp();
     });
-  $(".editRowButton").click(function () {
-    $("#updateFormDiv").slideDown();
+  $(".cell-more-button").click(function () {
+    $("#serviceDetail").slideDown();
   });
   
   $("#closeUpdateFormButton").click(function () {
-      $("#updateFormDiv").slideUp();
+      $("#serviceDetail").slideUp();
     });

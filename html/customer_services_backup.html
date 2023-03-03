@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="/css/room_list.css" />
+    <link rel="stylesheet" href="/css/customer_services.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -11,9 +11,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
     />
+    <link rel="stylesheet" href="/css/customer_services.css" />
     <link rel="stylesheet" href="/css/paging.css" />
     <link rel="stylesheet" href="/css/test.css" />
-    <title>Room list</title>
+    <title>Srevices</title>
   </head>
 
   <body>
@@ -29,7 +30,7 @@
             <li><a href="#">Profile</a></li>
             <li><a href="room_list.html">Room</a></li>
             <li><a href="#">Forum</a></li>
-            <li><a href="customer_services.html">Services</a></li>
+            <li><a href="#">Services</a></li>
             <li><a href="#">Bill</a></li>
           </ul>
         </div>
@@ -42,7 +43,7 @@
     <div class="app-container">
       <div class="app-content">
         <div class="app-content-header">
-          <h1 class="app-content-headerText">Room list</h1>
+          <h1 class="app-content-headerText">Services list</h1>
         </div>
         <div class="app-content-actions">
           <input class="search-bar" placeholder="Search..." type="text" />
@@ -94,7 +95,7 @@
           <thead>
             <tr class="products-header">
               <th class="product-cell image">
-                Room ID<button class="sort-button">
+                Service ID<button class="sort-button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -109,7 +110,7 @@
                 </button>
               </th>
               <th class="product-cell category">
-                Type<button class="sort-button">
+                Supplier<button class="sort-button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -124,7 +125,7 @@
                 </button>
               </th>
               <th class="product-cell status-cell">
-                Price<button class="sort-button">
+                Type<button class="sort-button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -139,6 +140,36 @@
                 </button>
               </th>
               <th class="product-cell sales">
+                Price<button class="sort-button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z"
+                    />
+                  </svg>
+                </button>
+              </th>
+              <th class="product-cell stock">
+                Detail<button class="sort-button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M496.1 138.3L375.7 17.9c-7.9-7.9-20.6-7.9-28.5 0L226.9 138.3c-7.9 7.9-7.9 20.6 0 28.5 7.9 7.9 20.6 7.9 28.5 0l85.7-85.7v352.8c0 11.3 9.1 20.4 20.4 20.4 11.3 0 20.4-9.1 20.4-20.4V81.1l85.7 85.7c7.9 7.9 20.6 7.9 28.5 0 7.9-7.8 7.9-20.6 0-28.5zM287.1 347.2c-7.9-7.9-20.6-7.9-28.5 0l-85.7 85.7V80.1c0-11.3-9.1-20.4-20.4-20.4-11.3 0-20.4 9.1-20.4 20.4v352.8l-85.7-85.7c-7.9-7.9-20.6-7.9-28.5 0-7.9 7.9-7.9 20.6 0 28.5l120.4 120.4c7.9 7.9 20.6 7.9 28.5 0l120.4-120.4c7.8-7.9 7.8-20.7-.1-28.5z"
+                    />
+                  </svg>
+                </button>
+              </th>
+              <th class="product-cell price">
                 Status<button class="sort-button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -163,13 +194,15 @@
               id=""
             >
               <!-- fix id to create data -->
-              <td class="product-cell category">R1</td>
+              <td class="product-cell category">S1</td>
               <td class="product-cell image">
-                1LDK
+                Management Board of the Apartment
               </td>
               <td class="product-cell status-cell">
-                3000000
+                management fee of apartment
               </td>
+              <td class="product-cell sales">300000</td>
+              <td class="product-cell stock">fire alarm, repair, etc.</td>
               <td class="product-cell price">
                 <span class="status active">avaiable</span>
               </td>
@@ -179,14 +212,15 @@
               onclick="$('#updateFormDiv').slideDown();"
               id=""
             >
-              <!-- fix id to create data -->
-              <td class="product-cell category">R2</td>
+              <td class="product-cell category">S2</td>
               <td class="product-cell image">
-                1LDK
+                Management Board of the Apartment
               </td>
               <td class="product-cell status-cell">
-                3000000
+                management fee of apartment
               </td>
+              <td class="product-cell sales">300000</td>
+              <td class="product-cell stock">fire alarm, repair, etc.</td>
               <td class="product-cell price">
                 <span class="status disabled">unavaiable</span>
               </td>
@@ -197,13 +231,15 @@
               id=""
             >
               <!-- fix id to create data -->
-              <td class="product-cell category">R1</td>
+              <td class="product-cell category">S1</td>
               <td class="product-cell image">
-                1LDK
+                Management Board of the Apartment
               </td>
               <td class="product-cell status-cell">
-                3000000
+                management fee of apartment
               </td>
+              <td class="product-cell sales">300000</td>
+              <td class="product-cell stock">fire alarm, repair, etc.</td>
               <td class="product-cell price">
                 <span class="status active">avaiable</span>
               </td>
@@ -213,14 +249,15 @@
               onclick="$('#updateFormDiv').slideDown();"
               id=""
             >
-              <!-- fix id to create data -->
-              <td class="product-cell category">R2</td>
+              <td class="product-cell category">S2</td>
               <td class="product-cell image">
-                1LDK
+                Management Board of the Apartment
               </td>
               <td class="product-cell status-cell">
-                3000000
+                management fee of apartment
               </td>
+              <td class="product-cell sales">300000</td>
+              <td class="product-cell stock">fire alarm, repair, etc.</td>
               <td class="product-cell price">
                 <span class="status disabled">unavaiable</span>
               </td>
@@ -231,13 +268,15 @@
               id=""
             >
               <!-- fix id to create data -->
-              <td class="product-cell category">R1</td>
+              <td class="product-cell category">S1</td>
               <td class="product-cell image">
-                1LDK
+                Management Board of the Apartment
               </td>
               <td class="product-cell status-cell">
-                3000000
+                management fee of apartment
               </td>
+              <td class="product-cell sales">300000</td>
+              <td class="product-cell stock">fire alarm, repair, etc.</td>
               <td class="product-cell price">
                 <span class="status active">avaiable</span>
               </td>
@@ -247,14 +286,15 @@
               onclick="$('#updateFormDiv').slideDown();"
               id=""
             >
-              <!-- fix id to create data -->
-              <td class="product-cell category">R2</td>
+              <td class="product-cell category">S2</td>
               <td class="product-cell image">
-                1LDK
+                Management Board of the Apartment
               </td>
               <td class="product-cell status-cell">
-                3000000
+                management fee of apartment
               </td>
+              <td class="product-cell sales">300000</td>
+              <td class="product-cell stock">fire alarm, repair, etc.</td>
               <td class="product-cell price">
                 <span class="status disabled">unavaiable</span>
               </td>
@@ -265,13 +305,15 @@
               id=""
             >
               <!-- fix id to create data -->
-              <td class="product-cell category">R1</td>
+              <td class="product-cell category">S1</td>
               <td class="product-cell image">
-                1LDK
+                Management Board of the Apartment
               </td>
               <td class="product-cell status-cell">
-                3000000
+                management fee of apartment
               </td>
+              <td class="product-cell sales">300000</td>
+              <td class="product-cell stock">fire alarm, repair, etc.</td>
               <td class="product-cell price">
                 <span class="status active">avaiable</span>
               </td>
@@ -281,14 +323,15 @@
               onclick="$('#updateFormDiv').slideDown();"
               id=""
             >
-              <!-- fix id to create data -->
-              <td class="product-cell category">R2</td>
+              <td class="product-cell category">S2</td>
               <td class="product-cell image">
-                1LDK
+                Management Board of the Apartment
               </td>
               <td class="product-cell status-cell">
-                3000000
+                management fee of apartment
               </td>
+              <td class="product-cell sales">300000</td>
+              <td class="product-cell stock">fire alarm, repair, etc.</td>
               <td class="product-cell price">
                 <span class="status disabled">unavaiable</span>
               </td>
@@ -299,13 +342,15 @@
               id=""
             >
               <!-- fix id to create data -->
-              <td class="product-cell category">R1</td>
+              <td class="product-cell category">S1</td>
               <td class="product-cell image">
-                1LDK
+                Management Board of the Apartment
               </td>
               <td class="product-cell status-cell">
-                3000000
+                management fee of apartment
               </td>
+              <td class="product-cell sales">300000</td>
+              <td class="product-cell stock">fire alarm, repair, etc.</td>
               <td class="product-cell price">
                 <span class="status active">avaiable</span>
               </td>
@@ -315,21 +360,21 @@
               onclick="$('#updateFormDiv').slideDown();"
               id=""
             >
-              <!-- fix id to create data -->
-              <td class="product-cell category">R2</td>
+              <td class="product-cell category">S2</td>
               <td class="product-cell image">
-                1LDK
+                Management Board of the Apartment
               </td>
               <td class="product-cell status-cell">
-                3000000
+                management fee of apartment
               </td>
+              <td class="product-cell sales">300000</td>
+              <td class="product-cell stock">fire alarm, repair, etc.</td>
               <td class="product-cell price">
                 <span class="status disabled">unavaiable</span>
               </td>
             </tr>
           </tbody>
         </table>
-      <p>*click a row to see detail</p>
         <div class="pagination large">
           <ul>
               <li><a href="#"></a></li>
@@ -355,54 +400,21 @@
       </div>
       </div>
     </div>
-
-     
     <!--  service detail -->
     <div id="updateFormDiv">
       <a href="#"
         ><i id="closeUpdateFormButton" class="material-icons">close</i></a
       >
-      <h2>ROOM DETAILS:</h2>
-      <div class="detailImg"></div>
-      <div class="detailInfo">
-        <p>
-          <strong>Room ID:</strong>S1
-          <br /><!--  fix here to get data from db -->
-          <strong>Type:</strong>1LDK <br />
-          <strong>price:</strong>300000 <br />
-          <strong>Status:</strong>avaiable <br />
-          <strong>Furniture:</strong>
-          <table>
-            <thead>
-              <tr>
-                <th>Furniture</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- data examle, remember to delete -->
-              <tr>
-                <!-- fix id to create data -->
-                <td>curtain</td>
-                <td>3pcs, good</td>
-              </tr>
-              <tr>
-                <!-- fix id to create data -->
-                <td>air-conditioner</td>
-                <td>3pcs, good</td>
-              </tr>
-              <tr>
-                <!-- fix id to create data -->
-                <td>electric stove</td>
-                <td>1pcs, good</td>
-              </tr>
-            </tbody>
-          </table>
-        </p>
-      </div>
-    </div>
-      
-      </div>
+      <h2>SERVICE DETAILS:</h2>
+      <p style="font-size: 2vw; line-height: 3vw; letter-spacing: .05vw;">
+        <strong>Service ID:</strong>S1
+        <br /><!--  fix here to get data from db -->
+        <strong>Supplier:</strong>Management Board of the Apartment <br />
+        <strong>Type:</strong>management fee of apartment <br />
+        <strong>Price:</strong>300000 <br />
+        <strong>Detail:</strong>fire alarm, repair, etc. <br />
+        <strong>Status:</strong>avaiable <br />
+      </p>
     </div>
     <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -413,7 +425,7 @@
     ></script>
 
     <!-- Function used to shrink nav bar removing paddings and adding black background -->
-    <script src="/js/room_list.js"></script>
+    <script src="/js/customer_services.js"></script>
     <script src="/js/test.js"></script>
     <script>
       $(window).scroll(function () {

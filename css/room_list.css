@@ -277,7 +277,7 @@ input {
 }
 #closeAddFormButton:hover ,
 #closeUpdateFormButton:hover {
-    filter: brightness(120%)
+    filter: brightness(80%)
 }
 .main {
     height: auto;
@@ -286,14 +286,17 @@ input {
 }
 .detailInfo {
     float: left;
+    margin: 1%;
     flex-direction: column;
-    width: 50%;
+    width: 48%;
+    font-size: 100px;
 }
 .detailImg {
     float: left;
     flex-direction: column;
     height: 75%;
-    width: 50%;
+    width: 49%;
+    margin-left: 1%;
     background-color: #ddd;
     background-image: url(/img/ban-công-căn-hộ-Vinhomes-Grand-Park.jpg);
 }
