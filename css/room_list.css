@@ -127,6 +127,7 @@ table{
     border-collapse: collapse;
     margin-top: 5px;
     width: 100%;
+    
 }
 .n1 {
     line-height: 30px;
@@ -289,7 +290,9 @@ input {
     margin: 1%;
     flex-direction: column;
     width: 48%;
-    font-size: 100px;
+}
+.detailInfo table{
+    font-size: 1vw;
 }
 .detailImg {
     float: left;
